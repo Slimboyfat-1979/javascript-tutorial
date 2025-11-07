@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, provide, ref } from 'vue'
-import Sidebar from './components/Sidebar.vue'
 import { mainStore } from './stores/main'
+import Sidebar from '@/components/SideBar.vue'
 
 interface ArrayMethod {
   id: number

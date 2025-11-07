@@ -1,5 +1,8 @@
+
 <template>
-  <div class="p-4 w-50 h-screen bg-purple-200 flex flex-col items-center">
+  <div
+    class="p-4 w-50 h-screen text-black bg-purple-200 flex flex-col items-center boborder-r border-purple-800"
+  >
     <h1 class="text-lg font-bold">Javascript Guide</h1>
     <p class="text-center text-xs">Choose your Javascript Concept</p>
     <Concepts />

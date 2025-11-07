@@ -9,7 +9,7 @@
 
 <script setup lang="ts">
 import {inject, type Ref, ref} from 'vue';
-import { mainStore } from '@/stores/main';
+import { mainStore } from '../stores/main';
 
 const store = mainStore();
 const initialSelect = ref(false)
