@@ -16,7 +16,7 @@ export const mainStore = defineStore('mainStore', () => {
         arrayMethodsList.value = methods;
     }
 
-    function addArraymethod(method: string) {
+    function chosenArraymethod(method: string) {
         arrayMethod.value = method
     }
 
@@ -24,6 +24,6 @@ export const mainStore = defineStore('mainStore', () => {
         return arrayMethod;
     }
 
-    return {arrayMethod, addArraymethod, getMethod, addArrayMethodList, arrayMethodsList}
+    return {arrayMethod, chosenArraymethod, getMethod, addArrayMethodList, arrayMethodsList}
 });
 
