@@ -2,6 +2,7 @@
 import { onMounted, provide, ref } from 'vue'
 import { mainStore } from './stores/main'
 import Sidebar from '@/components/SideBar.vue'
+import CardComponent from '../src/UI/CardComponent.vue'
 
 const store = mainStore()
 
@@ -18,10 +19,15 @@ const selectedMethod = store.getMethod()
   <div class="flex">
     <Sidebar />
     <div class="text-center w-full p-5 text-6xl bg-linear-to-r from-purple-200 to-violet-400 text-white">
-      <h1 v-if="!selectedMethod">Choose An Array Method</h1>
-      <h1 v-else="selectedMethod">Working With {{ selectedMethod.toUpperCase() }}</h1>
+          <CardComponent>
+            Here is the content to render
+          </CardComponent>
+     
     </div>
   </div>
 </template>
 
 <style scoped></style>
+ <!-- <h1 v-if="!selectedMethod">Choose An Array Method</h1> -->
+    
+      <!-- <h1 v-else="selectedMethod">Working With {{ selectedMethod.toUpperCase() }}</h1> -->
