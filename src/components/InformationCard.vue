@@ -1,6 +1,6 @@
 <template>
-<div class="text-black text-sm">
-    <p v-if="methodInfo">{{ methodInfo.description }} </p>
+<div class="text-black text-2xl">
+    <h2 v-if="methodInfo">{{ methodInfo.description }} </h2>
 </div>
 </template>
 
