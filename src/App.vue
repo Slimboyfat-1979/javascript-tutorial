@@ -3,6 +3,7 @@ import { onMounted, provide, ref } from 'vue'
 import { mainStore } from './stores/main'
 import Sidebar from '@/components/SideBar.vue'
 import CardComponent from '../src/UI/CardComponent.vue'
+import InformationCard from '../src/components/InformationCard.vue'
 
 const store = mainStore()
 
@@ -27,7 +28,7 @@ const selectedMethod = store.getMethod()
         <p class="mt-2 text-2xl font-light italic">Category: {{ selectedMethod.category }}</p>
       </div>
       <CardComponent> 
-        
+        <InformationCard :methodInfo="selectedMethod"></InformationCard>
       </CardComponent>
     </div>
   </div>

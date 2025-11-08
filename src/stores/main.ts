@@ -1,7 +1,7 @@
 import { defineStore } from "pinia";
 import {ref} from 'vue';
 
-interface ArrayMethod {
+export interface ArrayMethod {
     id: number,
     name: string,
     category: string,
