@@ -21,10 +21,7 @@ export const mainStore = defineStore('mainStore', () => {
         arrayMethod.value = methodObject;
     }
 
-    function getMethod() {
-        return arrayMethod;
-    }
 
-    return {arrayMethod, setArraymethod, getMethod, addArrayMethodList, arrayMethodsList}
+    return {arrayMethod, setArraymethod, addArrayMethodList, arrayMethodsList}
 });
 
