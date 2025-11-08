@@ -10,20 +10,21 @@ interface ArrayMethod {
 
 export const mainStore = defineStore('mainStore', () => {
     const arrayMethodsList = ref<ArrayMethod[]>([]);
-    const arrayMethod = ref('');
+    const arrayMethod = ref<ArrayMethod>();
 
     const addArrayMethodList = (methods: ArrayMethod[]) => {
         arrayMethodsList.value = methods;
     }
 
-    function chosenArraymethod(method: string) {
-        arrayMethod.value = method
+    function setArraymethod(method: string) {
+        const methodObject = arrayMethodsList.value.find(array => method.toLowerCase() === array.name.toLowerCase());
+        arrayMethod.value = methodObject;
     }
 
     function getMethod() {
         return arrayMethod;
     }
 
-    return {arrayMethod, chosenArraymethod, getMethod, addArrayMethodList, arrayMethodsList}
+    return {arrayMethod, setArraymethod, getMethod, addArrayMethodList, arrayMethodsList}
 });
 

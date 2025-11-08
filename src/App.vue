@@ -20,7 +20,8 @@ const selectedMethod = store.getMethod()
     <Sidebar />
     <div class="text-center w-full p-5 text-6xl bg-linear-to-r from-purple-200 to-violet-400 text-white">
             <h2 v-if="!selectedMethod">Choose an Array Method To Begin</h2>
-            <h2 v-else>{{ selectedMethod.slice(0,1).toUpperCase() + selectedMethod.slice(1)}}</h2>
+            <h2 v-else>{{ selectedMethod.name.slice(0,1).toUpperCase() + selectedMethod.name.slice(1)}}</h2>
+            <p class="mt-2 text-2xl font-light italic">Category: {{ selectedMethod.category }}</p>
           <CardComponent>
            
           </CardComponent>
