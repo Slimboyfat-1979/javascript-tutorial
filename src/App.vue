@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { onMounted, provide, ref, computed } from 'vue'
+import { onMounted, computed } from 'vue'
 import { mainStore } from './stores/main'
 import Sidebar from '@/components/SideBar.vue'
 import CardComponent from '../src/UI/CardComponent.vue'
-import InformationCard from '../src/components/InformationCard.vue'
+
 
 const store = mainStore()
 
