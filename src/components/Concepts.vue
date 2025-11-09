@@ -18,7 +18,7 @@ function chosenMethod(e: Event) {
     initialSelect.value = true;
     const target = e.target as HTMLSelectElement;
     const selectedText = target.options[target.selectedIndex]?.text;
-    store.setArraymethod(selectedText)
+    store.setArraymethod(selectedText ?? '')
 }
 
 const store = mainStore();
