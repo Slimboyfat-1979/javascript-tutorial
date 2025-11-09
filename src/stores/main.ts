@@ -16,8 +16,8 @@ export const mainStore = defineStore('mainStore', () => {
         arrayMethodsList.value = methods;
     }
 
-    function setArraymethod(method: string) {
-        const methodObject = arrayMethodsList.value.find(array => method.toLowerCase() === array.name.toLowerCase());
+    function setArraymethod(method: string | undefined) {
+        const methodObject = arrayMethodsList.value.find(array => method?.toLowerCase() === array.name.toLowerCase());
         arrayMethod.value = methodObject;
     }
 
