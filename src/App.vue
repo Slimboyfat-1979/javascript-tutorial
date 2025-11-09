@@ -8,7 +8,7 @@ import CardComponent from '../src/UI/CardComponent.vue'
 const store = mainStore()
 
 onMounted(async () => {
-  const res = await fetch('arrayMethods.json')
+  const res = await fetch('/arrayMethods.json')
   const data = await res.json()
   store.addArrayMethodList(data)
 })
