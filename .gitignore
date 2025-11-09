@@ -36,4 +36,4 @@ coverage
 __screenshots__/
 
 # keys
-.env
+.env.local
